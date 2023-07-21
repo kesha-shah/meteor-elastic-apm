@@ -42,7 +42,7 @@ shimmer.wrap(Agent, 'start', function(startAgent) {
 
             Object.entries({
               methods: () => instrumentMethods(Agent, Meteor),
-              session: () => instrumentSession(Agent, Session),
+             // session: () => instrumentSession(Agent, Session),
               subscription: () => instrumentSubscription(Agent, Subscription),
               async: () => instrumentAsync(Agent, Fibers),
               db: () => {
